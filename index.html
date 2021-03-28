@@ -17,18 +17,29 @@
 			<a href="#">Contact</a>
 		</nav>
 	</header>
-	<di	v class="container">
+	<div class="container main-wrapper">
 		<main>
-
+			<h2>Grid de Imagenes</h2>
 		</main>
-		<aside>
-			<form action="">
-				<input type="text" name="name">
-				<input type="text" name="age">
-				<textarea name="comentario" rows="5" cols="25"></textarea>
-				<button type="">Submit</button>
-				<button type="">Reset</button>
-				<button type="">Add Comment</button>
+		<aside class="sidebar">
+			<form class="comment-form" action="#">
+				<div class="field">
+					<label for="name">Nombre:</label>
+					<input type="text" name="name" id="name">
+				</div>
+				<div class="field">
+					<label for=age">Edad:</label>
+					<input type="text" name="age" id="age">
+				</div>
+				<div class="field">
+					<label for="comment-text">Comentario:</label>
+					<textarea id="commento-text" name="comment-text"></textarea>
+				</div>
+				<div class="field send">
+					<button type="">Reset</button>
+					<button type="">Add Comment</button>
+				</div>
+				
 			</form>
 		</aside>
 	</div>

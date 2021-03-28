@@ -8,16 +8,39 @@
 html {
     box-sizing: border-box;
 }
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
+
 *, *:before, *:after {
     box-sizing: inherit;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    max-width: 100%; 
+}
+
 a {
-    color: var(--light);
+    display: block;
+    color: var(--dark);
     text-decoration: none;
+    text-align: center;
+    line-height: 1.8;
+}
+
+label {
+     text-align: right;
+     flex-basis: calc((100% - 65%) - .8rem);
+}
+
+input[type="text"], 
+textarea {
+    padding: .4rem 0 .4rem .8rem;
+    font-size: 1rem;
+    border: 1px solid #999;
+    border-radius: 5px;
+    flex-basis: 65%;
 }
 
 .container {
@@ -33,11 +56,39 @@ a {
 }
 
 .navegation {
-    background-color: var(--dark);
+    width: 100%;
+    /* background-color: var(--dark); */
+}
+
+.main-wrapper {
+    padding: 0 1rem;
+}
+
+.sidebar {
+    width: 100%;
+}
+
+.comment-form {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #CCC;
+    border-radius: 10px;
+}
+
+.field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: .5rem 0;
+}
+
+.field.send {
+    align-self: flex-end;
+    gap: 0 .5rem;
 }
 
 .footer {
-    width: 100%;
     margin-top: 2rem;
     padding: .3rem 0;
     color: var(--light);
