@@ -9,17 +9,20 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<header class="container header">
+	<header class="header">
 		<h1 class="brand">My Personal Web</h1>
-		<nav class="navegation">
-			<a href="#">Home</a>
-			<a href="#">About</a>
-			<a href="#">Contact</a>
-		</nav>
+		<div class="nav-bar">
+			<nav class="navegation container">
+				<a href="#">Home</a>
+				<a href="#">About</a>
+				<a href="#">Contact</a>
+			</nav>
+		</div>
+		
 	</header>
-	<div class="container wrapper">
-		<main class="gallery">
-			<h2>Grid de Imagenes</h2>
+	<main class="main-content container wrapper">
+		<div class="gallery">
+			<h2>Gallery</h2>
 			<section class="gallery__wrapper">
 				<div class="card-img">
 					<img src="https://cdn.pixabay.com/photo/2015/06/19/21/24/avenue-815297_960_720.jpg" alt="">
@@ -40,7 +43,7 @@
 					<img src="https://cdn.pixabay.com/photo/2016/10/22/17/46/mountains-1761292_960_720.jpg" alt="">
 				</div>
 			</section>
-		</main>
+		</div>
 		<aside class="sidebar">
 			<h2>Leave a reply</h2>
 			<form class="comment-form" action="#">
@@ -54,7 +57,7 @@
 				</div>
 				<div class="field">
 					<label for="comment-text">Comentario:</label>
-					<textarea id="comment-text" name="comment-text" maxlength="35"></textarea>
+					<textarea id="comment-text" name="comment-text" rows="4" cols="25" maxlength="35"></textarea>
 				</div>
 				<div class="field send">
 					<button type="button" class="btn btn-reset">Reset</button>
@@ -63,7 +66,7 @@
 				
 			</form>
 		</aside>
-	</div>
+	</main>
 	<section class="container wrapper" id="entry-comments">
 		<h2>Comments</h2>
 		<article class="comment">
@@ -76,7 +79,7 @@
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, totam.</p>
 			</blockquote>
 		</article>
-		<hr>
+		<hr style="margin: 1.5rem 0;">
 		<article class="comment">
 			<div class="comment-header">
 				<div class="comment-author">

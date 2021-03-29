@@ -38,6 +38,11 @@ textarea {
     flex-basis: 65%;
 }
 
+textarea {
+    overflow: auto;
+    resize: none;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -55,17 +60,18 @@ textarea {
     align-items: center;
 }
 
-.navegation {
+.nav-bar{
     width: 100%;
     background-color: var(--dark);
 }
 
 .navegation a {
     display: block;
+    padding: 1rem;
     color: var(--light);
     text-decoration: none;
     text-align: center;
-    line-height: 1.8;
+    text-transform: uppercase;
     transition: all .4s ease;
 }
 
@@ -74,7 +80,23 @@ textarea {
     color: black;
 }
 
+@media screen and (min-width: 768px) {
+    .navegation {
+        padding: 0 1rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navegation a {
+        flex-grow: 1;
+    }
+}
+
 /* GALLERY SECTION*/
+.main-content {
+    margin-bottom: 2rem;
+}
+
 .card-img {
     margin: 1rem 0;
 }
@@ -84,12 +106,41 @@ textarea {
     width: 100%;
 }
 
+@media screen and (min-width: 768px) {
+    .main-content {
+        display: flex;
+    }
+
+    .gallery__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .card-img {
+        margin: 0;
+        flex: 0 0 45%;
+    }
+
+    .sidebar {
+        flex: 0 0 22rem;
+        padding: 0 1rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .card-img {
+        margin: 0;
+        flex: 0 0 31%;
+    }
+}
+
 .comment-form {
     padding: 1rem;
     display: flex;
     flex-direction: column;
     border: 1px solid #CCC;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .field {
@@ -138,7 +189,7 @@ textarea {
 
 /* COMMENT SECTION */
 .comment {
-    margin: 1rem 0;
+    margin: 1rem 0 1rem 1rem;
 }
 
 /* FOOTER SECTION */
