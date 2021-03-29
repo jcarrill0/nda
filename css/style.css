@@ -18,16 +18,11 @@ body {
 }
 
 img {
-    max-width: 100%; 
-}
-
-a {
-    display: block;
-    color: var(--dark);
-    text-decoration: none;
-    text-align: center;
-    line-height: 1.8;
-}
+    width: 100%;
+    height: 184px;
+    object-fit: cover;
+    object-position: center;
+} 
 
 label {
      text-align: right;
@@ -39,7 +34,7 @@ textarea {
     padding: .4rem 0 .4rem .8rem;
     font-size: 1rem;
     border: 1px solid #999;
-    border-radius: 5px;
+    border-radius: 3px;
     flex-basis: 65%;
 }
 
@@ -48,6 +43,11 @@ textarea {
     margin: 0 auto;
 }
 
+.wrapper {
+    padding: 0 1rem;
+}
+
+/* HEADER SECTION*/
 .header {
     margin-bottom: 2rem;
     display: flex;
@@ -57,13 +57,29 @@ textarea {
 
 .navegation {
     width: 100%;
-    /* background-color: var(--dark); */
+    background-color: var(--dark);
 }
 
-.main-wrapper {
-    padding: 0 1rem;
+.navegation a {
+    display: block;
+    color: var(--light);
+    text-decoration: none;
+    text-align: center;
+    line-height: 1.8;
+    transition: all .4s ease;
 }
 
+.navegation a:hover {
+    background-color: #c9c84a;
+    color: black;
+}
+
+/* GALLERY SECTION*/
+.card-img {
+    margin: 1rem 0;
+}
+
+/* FORM SECTION*/
 .sidebar {
     width: 100%;
 }
@@ -88,6 +104,44 @@ textarea {
     gap: 0 .5rem;
 }
 
+.btn {
+    padding: .8rem;
+    display: block;
+    border: none;
+    text-align: center;
+    transition: all .3s ease; 
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn-reset {
+    color: var(--light);
+    background-color: var(--dark);
+}
+
+.btn-reset:hover {
+    color: var(--dark);
+    background-color: var(--primary);
+}
+
+.btn-submit {
+    color: var(--dark);
+    background-color: var(--primary);
+}
+
+.btn-submit:hover {
+    color: var(--light);
+    background-color: var(--dark);
+}
+
+/* COMMENT SECTION */
+.comment {
+    margin: 1rem 0;
+}
+
+/* FOOTER SECTION */
 .footer {
     margin-top: 2rem;
     padding: .3rem 0;
@@ -95,3 +149,18 @@ textarea {
     background-color: var(--grayDark);
     text-align: center;
 }
+
+/*
+https://cdn.pixabay.com/photo/2015/06/19/21/24/avenue-815297_960_720.jpg
+
+https://cdn.pixabay.com/photo/2020/03/03/20/31/boat-4899802_960_720.jpg
+
+https://cdn.pixabay.com/photo/2017/02/01/22/02/mountain-landscape-2031539_960_720.jpg
+
+https://cdn.pixabay.com/photo/2016/02/10/21/59/landscape-1192669_960_720.jpg
+
+https://cdn.pixabay.com/photo/2016/08/09/21/54/lake-1581879_960_720.jpg
+
+https://cdn.pixabay.com/photo/2016/10/22/17/46/mountains-1761292_960_720.jpg
+
+*/
