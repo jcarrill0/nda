@@ -181,7 +181,8 @@ textarea {
 }
 
 .video {
-    flex: 0 1 100% !important;
+    width: 100% !important;
+    height: auto !important;
 }
 
 @media screen and (min-width: 648px) {
@@ -193,6 +194,6 @@ textarea {
     }
 
     .video {
-        flex: 0 1 50% !important;
+        width: 50% !important;
     }
 }
