@@ -163,6 +163,10 @@ textarea {
     margin: 1rem 0 1rem 1rem;
 }
 
+.comment strong {
+    text-transform: capitalize;
+}
+
 /* FOOTER SECTION */
 .footer {
     margin-top: 2rem;

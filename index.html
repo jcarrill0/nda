@@ -46,7 +46,7 @@
 		</div>
 		<aside class="sidebar">
 			<h2>Leave a reply</h2>
-			<form class="comment-form" action="#">
+			<form id="myForm" class="comment-form">
 				<div class="field">
 					<label for="name">Nombre:</label>
 					<input type="text" name="name" id="name">
@@ -60,39 +60,43 @@
 					<textarea id="comment-text" name="comment-text" rows="4" cols="25" maxlength="35"></textarea>
 				</div>
 				<div class="field send">
-					<button type="button" class="btn btn-reset">Reset</button>
+					<button id="resetForm" type="reset" class="btn btn-reset">Reset</button>
 					<button type="submit" class="btn btn-submit">Post comment</button>
 				</div>
-				
 			</form>
 		</aside>
 	</main>
-	<section class="container wrapper" id="entry-comments">
+	<section class="container wrapper">
 		<h2>Comments</h2>
-		<article class="comment">
-			<div class="comment-header">
-				<div class="comment-author">
-					<p><strong>Héctor</strong> dice: </p>
+		<div id="entry-comments">
+			<article class="comment">
+				<div class="comment-header">
+					<div class="comment-author">
+						<p><strong>Héctor</strong> dice: </p>
+					</div>
 				</div>
-			</div>
-			<blockquote class="comment-content">
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, totam.</p>
-			</blockquote>
-		</article>
-		<hr style="margin: 1.5rem 0;">
-		<article class="comment">
-			<div class="comment-header">
-				<div class="comment-author">
-					<p><strong>Susan</strong> dice: </p>
+				<blockquote class="comment-content">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, totam.</p>
+				</blockquote>
+			</article>
+			<hr style="margin: 1.5rem 0;">
+			<article class="comment">
+				<div class="comment-header">
+					<div class="comment-author">
+						<p><strong>Susan</strong> dice: </p>
+					</div>
 				</div>
-			</div>
-			<blockquote class="comment-content">
-				<p>Lorem ipsum dolor sit amet consectetur.</p>
-			</blockquote>
-		</article>
+				<blockquote class="comment-content">
+					<p>Lorem ipsum dolor sit amet consectetur.</p>
+				</blockquote>
+			</article>
+			<hr style="margin: 1.5rem 0;">
+		</div>
 	</section>
 	<footer class="footer">
 		<p class="copyright">&copy 2021 My Personal Web</p>
 	</footer>
+
+	<script src="./js/script.js"></script>
 </body>
 </html>
